@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>СвежийВоздух — элитный воздух в банке с доставкой</title>
+  <meta name="description" content="Продажа свежего воздуха в банке: альпийский, морской, лесной, городской. Эко-упаковка, доставка по России, сертификат свежести. Шутка, которая работает!">
+  <meta name="keywords" content="воздух в банке, купить воздух, свежий воздух, эко-сувенир, подарок">
+  <meta property="og:title" content="СвежийВоздух — воздух в банке">
+  <meta property="og:description" content="Альпийский, морской, лесной воздух в банке. Доставка, сертификат, эко-упаковка.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- МЕНЮ -->
+  <header class="header">
+    <div class="logo">💨 СвежийВоздух</div>
+    <nav>
+      <a href="#catalog">Каталог</a>
+      <a href="#about">О нас</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#order">Заявка</a>
+      <a href="#cart" id="cartBtn">🛒 Корзина (<span id="cartCount">0</span>)</a>
+    </nav>
+  </header>
+
+  <!-- ГЛАВНЫЙ ЭКРАН -->
+  <section class="hero">
+    <h1>Свежий воздух в банке</h1>
+    <p>Альпы, море, лес — в одной банке. Дыши, где хочешь.</p>
+    <a href="#catalog" class="btn">Выбрать воздух</a>
+  </section>
+
+  <!-- КАТАЛОГ -->
+  <section id="catalog" class="section">
+    <h2>Каталог воздуха</h2>
+    <div class="products" id="products"></div>
+  </section>
+
+  <!-- О НАС -->
+  <section id="about" class="section">
+    <h2>Почему мы</h2>
+    <ul class="benefits">
+      <li>🌿 100% натуральный состав (азот, кислород, немного мечты)</li>
+      <li>📦 Эко-упаковка из переработанного стекла</li>
+      <li>🚚 Доставка по России за 2–5 дней</li>
+      <li>📜 Сертификат свежести в каждой банке</li>
+    </ul>
+  </section>
+
+  <!-- ОТЗЫВЫ -->
+  <section id="reviews" class="section">
+    <h2>Отзывы</h2>
+    <div class="reviews">
+      <div class="review">«Купил альпийский — дышу и плачу от счастья» — Иван, Москва</div>
+      <div class="review">«Морской воздух пахнет отпуском» — Мария, СПб</div>
+      <div class="review">«Лесной — топ для работы из дома» — Олег, Казань</div>
+    </div>
+  </section>
+
+  <!-- ФОРМА ЗАЯВКИ -->
+  <section id="order" class="section">
+    <h2>Оставить заявку</h2>
+    <form id="orderForm">
+      <input type="text" name="name" placeholder="Ваше имя" required>
+      <input type="tel" name="phone" placeholder="Телефон или Telegram" required>
+      <textarea name="comment" placeholder="Какой воздух хотите?" rows="3"></textarea>
+      <button type="submit" class="btn">Отправить заявку</button>
+      <p id="formStatus"></p>
+    </form>
+  </section>
+
+  <!-- КОРЗИНА -->
+  <aside id="cart" class="cart-panel">
+    <h2>Корзина</h2>
+    <div id="cartItems"></div>
+    <p class="cart-total">Итого: <span id="cartTotal">0</span> ₽</p>
+    <button class="btn" id="checkoutBtn">Оформить заказ</button>
+    <button class="btn-close" id="closeCart">×</button>
+  </aside>
+
+  <footer class="footer">
+    <p>© 2025 СвежийВоздух. Шуточный проект. Воздух не является лекарством.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
